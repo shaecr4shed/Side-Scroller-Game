@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mario Game | Anshdeep Bhachoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/-ico" href="../favicon.ico">
+  <link rel="icon" href="favicon.ico"></head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url(bg.png);
+      background-color: black;
+      overflow: hidden;
+      background-repeat: no-repeat;
+    }
+
+    video{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+    
+    h1 {
+      color: white;
+    }
+
+    h3 {
+      text-align: center;
+
+    }
+
+    p {
+      margin: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .canvas {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      backdrop-filter: blur(25px);
+    }
+
+    .how-to-play {
+      margin-left: 10px;
+      margin-right: 10px;
+      color: aliceblue;
+      background-color: black;
+      border-radius: 15px;
+      background: url(textPlate.png);
+      box-shadow: 5px;
+      box-shadow: rgb(52, 55, 57);
+    }
+
+    .about {
+      margin-left: 10px;
+      margin-right: 10px;
+      color: aliceblue;
+      background-color: black;
+      backdrop-filter: blur(25px);
+      border-radius: 15px;
+      background: url(textPlate.png);
+    }
+
+
+
+    .footer {
+      display: flex;
+      color: white;
+      margin-top: 10vh;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      height: 10.5vh;
+    }
+  </style>
+
+  <body>
+      <div class="header">
+        <h1>Side-Scroller Game</h1>
+      </div>
+      <div class="canvas">
+        <div class="how-to-play">
+
+        </div>
+        <canvas>
+        </canvas>
+        <div class="about">
+
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="footer">
+          <p>&copy; 2024 Anshdeep Singh Bhachoo, All rights reserved.</p>
+        </div>
+      </div>
+  <script src="./js/canvas.bundle.js"></script></body>
+</html>
